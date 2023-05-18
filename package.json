@@ -1,0 +1,20 @@
+{
+  "name": "s11-typescript",
+  "version": "1.0.0",
+  "description": "Node session 11",
+  "main": "index.js",
+  "scripts": {
+    "transpile": "tsc index.ts",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "typescriot",
+    "javascript"
+  ],
+  "author": "Fran Linde",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.0.4"
+  }
+}
