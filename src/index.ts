@@ -1,15 +1,16 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 // Number
-let numeroEntero: number = 10;
+const numeroEntero: number = 10;
 const numeroDecimal: number = 2.5;
 const numeroNegativo: number = -10;
 
-let miVariable = 99;
+const miVariable = 99;
 // Typescript infiere los tipos (deduce)
 // miVariable = "No puedo hacer esto";
 
 // String
 const miTexto: string = "Hola amigos!";
-const miTextoDos: string = 'Hola amigos!';
+const miTextoDos: string = "Hola amigos!";
 const miTextoTres: string = `Hola amigos ${numeroEntero} !`;
 
 // Boolean
@@ -20,6 +21,7 @@ const isFriday: boolean = true;
 // Valores no definidos -> Solo ponemos tipo y definimos depués
 let miValor: string;
 // miValor -> undefined
+// eslint-disable-next-line prefer-const
 miValor = "Ya tengo valor";
 // miValor -> string (Ya tengo valor)
 

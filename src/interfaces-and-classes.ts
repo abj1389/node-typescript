@@ -1,22 +1,23 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 // Definimos interfaz
 interface Address {
-  street: string;
-  number: number;
-  city: string;
+  street: string
+  number: number
+  city: string
 }
 
 // Utilizamos
 const myAddress: Address = {
   street: "Calle Falsa",
   number: 123,
-  city: "Madrid",
+  city: "Madrid"
 }
 
 // Interfaz anidada
 interface Person {
-  name: string;
-  phone: number;
-  address: Address;
+  name: string
+  phone: number
+  address: Address
 }
 
 const me: Person = {
@@ -27,14 +28,14 @@ const me: Person = {
     street: "Calle inventada",
     city: "Madrid",
     number: 1
-  },
+  }
 }
 
-// Clase 
+// Clase
 class Animal {
   public specie: string;
   public legs: number;
-  private habitat: string;
+  private readonly habitat: string;
 
   constructor(specie: string, legs: number, habitat: string) {
     this.specie = specie;
@@ -44,12 +45,14 @@ class Animal {
     console.log("Creado animal!");
   }
 
-  getDescription() {
+  getDescription(): number {
     console.log(`
       Soy un ${this.specie},
       tengo ${this.legs} patas
       y vivo en ${this.habitat}
     `);
+
+    return 5;
   }
 }
 
@@ -62,12 +65,11 @@ console.log("El perro es de la especie: " + perro.specie);
 // Da error acceder a variables privadas, pero nos deja ejecutarlo
 // console.log("El perro vive en: " + perro.habitat);
 
-
 // Clases que cumplen interfaces
 interface Automobile {
-  wheels: number;
-  brand: string;
-  model: string;
+  wheels: number
+  brand: string
+  model: string
 }
 
 class Car implements Automobile {
@@ -85,5 +87,5 @@ class Car implements Automobile {
 
 const coche = new Car("Lexus", "CT200");
 const limusina = new Car("Mayback", "3000", 6);
-console.log("El lexus tiene estas ruedas: " + coche.wheels);
-console.log("La limo tiene estas ruedas: " + limusina.wheels);
+console.log(`El lexus tiene estas ruedas:  + ${coche.wheels}`);
+console.log(`La limo tiene estas ruedas:  + ${limusina.wheels}`);

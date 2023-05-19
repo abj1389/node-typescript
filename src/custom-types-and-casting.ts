@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/restrict-plus-operands */
+
 // Tipo custom listado de valores
 type Country = "Spain" | "Portugal" | "Germany";
 const myCountry: Country = "Spain";
@@ -30,7 +32,6 @@ console.log(result); // 15
 b = b.toString();
 result = a + b;
 console.log(result); // 105
-
 
 // EJEMPLO DE AS
 const miCadena: string = "Hola amigos!";
