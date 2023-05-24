@@ -12,6 +12,8 @@ module.exports = {
   },
   rules: {
     "semi": "off",
+    "indent": ["error", 2],
+    "no-empty": "off",
     "space-before-function-paren": "off",
     "quotes": [2, "double"],
     "quote-props": [2, "consistent"],
@@ -20,5 +22,9 @@ module.exports = {
     "@typescript-eslint/quotes": [2, "double"],
     "@typescript-eslint/semi": "off",
     "@typescript-eslint/space-before-function-paren": "off",
+    "@typescript-eslint/indent": ["error", 2],
+    "@typescript-eslint/prefer-readonly": "off",
+    "@typescript-eslint/no-extraneous-class": "off",
+    "@typescript-eslint/no-unused-vars": "off",
   },
 };
